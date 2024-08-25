@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>chancdoesui</Title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1" name="viewport"/>
+        <!-- FONT 1 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&display=swap" rel="stylesheet">
+        <!-- FONT 2 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&family=Suez+One&display=swap" rel="stylesheet">
+        <!-- FONT 3 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Concert+One&family=Inder&family=Indie+Flower&family=Suez+One&display=swap" rel="stylesheet">
+        <!-- LINK STYLE -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                // MENU
+                $(".hammenu").click(function(e){
+                    $('.menu').toggleClass('open');
+                    e.stopPropagation();
+                });
+                $(document).on("click","",function() {
+                    $('.menu').removeClass('open');
+                });
+            });
+          </script>
+    </head>
+    <body>
+        <div class="pattern-2"></div>
+        <div class="pattern-3"></div>
+        <div class="topbar">
+            <div class="logo"><a href="index.html"></a></div>
+            <div class="logotext">  
+                <a href="index.html">chancdoesui</a>
+            </div>
+            <ul class="menu">
+                <li class="menuitem"><a href="index.html"><p>Home</p></a></li>
+                <li class="menuitem"><a href="about.html"><p>About</p></a></li>
+                <li class="menuitem"><a href="work.html"><p>Work</p></a></li>
+                <li class="menuitem"><a href="#footer"><p>Contact</p></a></li>
+                <li class="hammenu"><a><img src="icons/menu.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="biotitle">
+            <h1>Check out my latest works!</h1>
+        </div>
+        <div class="showcase">
+            <div class="grid-item">
+                <div class="pro" id="project1"></div>
+                <div class="proname" id="proname1">AoDai in Digital Era</div>
+            </div>
+            <div class="grid-item">
+                <div class="pro" id="project2"></div>
+                <div class="proname" id="proname2">Crane Illustration</div>
+            </div>
+            <div class="grid-item">
+                <div class="pro" id="project3"></div>
+                <div class="proname" id="proname3">Zodiac Dragons</div>
+            </div>
+            <div class="grid-item">
+                <div class="pro" id="project4"></div>
+                <div class="proname" id="proname4">Eco Fishing</div>
+            </div>
+            <div class="grid-item">
+                <div class="pro" id="project5"></div>
+                <div class="proname" id="proname5">Posters</div>
+            </div>
+            <div class="grid-item">
+                <div class="pro" id="project6"></div>
+                <div class="proname"id="proname6">Yakgwa Tutorial</div>
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <!-- DIV FOLLOW ME -->
+            <div class="followme">
+                <h2 id="follow">Follow me</h2>
+                <ul class="icons">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/chhaanc/"><img src="icons/fb.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/chhaanc/"><img src="icons/insta.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/chancdoesui"><img src="icons/x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/duy-ho-34b2142a2/?trk=opento_sprofile_topcard"><img src="icons/linkedin.png" alt=""></a>
+                    </li>
+            </div>
+            <!-- DIV CONTACT INFO -->
+            <div class="contactinfo">
+                <h2 id="contact">Contact Info</h2>
+                <div class="details">
+                    <div class="ct">
+                        <img src="footer-icons/location.png" alt="">
+                        <span>15B Nguyen Luong Bang Street, Phu My, District 7, HCM City</span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/mail.png" alt="">
+                        <span style="margin-top: -18px;"><a href="mailto:duychanc6705@gmail.com ">duychanc6705@gmail.com</a></span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/phone.png" alt="">
+                        <span style="margin-top: -20px;">+84 818 521 319</span>
+                    </div>
+                </div>    
+            </div>
+            <div style="clear:both"></div>
+            <!-- DIV COPYRIGHT -->
+            <div class="Copyright">© 2024 UI Portfolio. All rights reserved | Design by chanc</div>
+        </div>
+    </body>
+</html>

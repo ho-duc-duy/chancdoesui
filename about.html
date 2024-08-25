@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>chancdoesui</Title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1" name="viewport"/>
+        <!-- FONT 1 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&display=swap" rel="stylesheet">
+        <!-- FONT 2 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&family=Suez+One&display=swap" rel="stylesheet">
+        <!-- LINK STYLE -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="index.scss">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                // MENU
+                $(".hammenu").click(function(e){
+                    $('.menu').toggleClass('open');
+                    e.stopPropagation();
+                });
+                $(document).on("click","",function() {
+                    $('.menu').removeClass('open');
+                });
+            });
+          </script>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="logo"><a href="index.html"></a></div>
+            <div class="logotext">  
+                <a href="index.html">chancdoesui</a>
+            </div>
+            <ul class="menu">
+                <li class="menuitem"><a href="index.html"><p>Home</p></a></li>
+                <li class="menuitem"><a href="about.html"><p>About</p></a></li>
+                <li class="menuitem"><a href="work.html"><p>Work</p></a></li>
+                <li class="menuitem"><a href="#footer"><p>Contact</p></a></li>
+                <li class="hammenu"><a><img src="icons/menu.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="page-contain">
+            <div class="biotitle"><h1>Biography</h1></div>
+            <div class="bio-avatar"></div>
+            <div class="biographytext1">
+                <div class="bio" id="bio1">I am Duy, it’s nice to meet you!</div>
+                <div class="bio" id="bio2">I was born in Ba Ria-Vung Tau and now living in Ho Chi Minh City. I'm currently a freshman in Digital Media course with 1 year self-learning experience in making creative products and visual communication.</div>
+            </div>
+            <br>
+            <div class="biographytext2">
+                <div class="bio" id="bio3">How i get to this field?</div>    
+                <div class="bio" id="bio4">My ambition to be a creative producer guide me to Digital Media program where i can daily enhance my soft and hard skills via professional environment.
+                    <br>
+                    <br>
+                    My design style tends to be abstract, quirky and bold, but occasionally I will change to a simpler style, aiming to attract many types of clients.
+                </div>
+            </div>
+            <div class="bio-flower" id="flo1"></div>
+            <div class="bio-flower" id="flo2"></div>
+        </div>
+        <div class="hobby">
+            <h3>Things I Like</h3>
+        </div>
+        <div class="footer" id="footer">
+            <!-- DIV FOLLOW ME -->
+            <div class="followme">
+                <h2 id="follow">Follow me</h2>
+                <ul class="icons">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/chhaanc/"><img src="icons/fb.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/chhaanc/"><img src="icons/insta.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/chancdoesui"><img src="icons/x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/duy-ho-34b2142a2/?trk=opento_sprofile_topcard"><img src="icons/linkedin.png" alt=""></a>
+                    </li>
+            </div>
+            <!-- DIV CONTACT INFO -->
+            <div class="contactinfo">
+                <h2 id="contact">Contact Info</h2>
+                <div class="details">
+                    <div class="ct">
+                        <img src="footer-icons/location.png" alt="">
+                        <span>15B Nguyen Luong Bang Street, Phu My, District 7, HCM City</span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/mail.png" alt="">
+                        <span style="margin-top: -18px;"><a href="mailto:duychanc6705@gmail.com ">duychanc6705@gmail.com</a></span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/phone.png" alt="">
+                        <span style="margin-top: -20px;">+84 818 521 319</span>
+                    </div>
+                </div>    
+            </div>
+            <div style="clear:both"></div>
+            <!-- DIV COPYRIGHT -->
+            <div class="Copyright">© 2024 UI Portfolio. All rights reserved | Design by chanc</div>
+        </div>
+    </body>
+</html>

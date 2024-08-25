@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>chancdoesui</Title>
+        <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1" name="viewport"/>
+        <!-- FONT 1 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&display=swap" rel="stylesheet">
+        <!-- FONT 2 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inder&family=Indie+Flower&family=Suez+One&display=swap" rel="stylesheet">
+        <!-- LINK STYLE -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                setInterval(
+                    function(){
+                        var parent = $('.flower-yellow .text');
+                        var firstItem = parent.find('.text-inside').eq(0);
+                        var visibleItem = parent.find('.text-inside:visible');
+                        var currIndex = visibleItem.index();
+                        if(currIndex == 3){
+                            visibleItem.hide();
+                            firstItem.show();
+                            visibleItem = parent.find('.text-inside').eq(0);
+                        }
+                        else{
+                            var nextItem = visibleItem.next();
+                            visibleItem.hide();
+                            nextItem.show();
+                        }
+                    }
+                ,1000);
+                // MENU
+                $(".hammenu").click(function(e){
+                    $('.menu').toggleClass('open');
+                    e.stopPropagation();
+                });
+                $(document).on("click","",function() {
+                    $('.menu').removeClass('open');
+                });
+            });
+          </script>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="logo"><a href="index.html"></a></div>
+            <div class="logotext">  
+                <a href="index.html">chancdoesui</a>
+            </div>
+            <ul class="menu">
+                <li class="menuitem"><a href="index.html"><p>Home</p></a></li>
+                <li class="menuitem"><a href="about.html"><p>About</p></a></li>
+                <li class="menuitem"><a href="work.html"><p>Work</p></a></li>
+                <li class="menuitem"><a href="#footer"><p>Contact</p></a></li>
+                <li class="hammenu"><a><img src="icons/menu.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="homepage-illus">
+            <div class="homepage-text">
+                <h2>chanc</h2>
+                <h1>Portfolio</h1>
+            </div>
+            <div class="box-flower">
+                <div class="flower-blue">
+                    <div class="text">Hello, i'm Duy</div>
+                    <img src="homepage-desktop/homepage-flower-01.png" alt="">
+                </div>
+                <div class="flower-red">
+                    <div class="text">Designer</div>
+                    <img src="homepage-desktop/homepage-flower-02.png" alt="">
+                </div>
+                <div class="flower-yellow">
+                    <div class="text">
+                        <div class="text-inside" id="text-in1">UI/UX</div>
+                        <div class="text-inside" id="text-in2">Illustration</div>
+                        <div class="text-inside" id="text-in3">Branding</div>
+                        <div class="text-inside" id="text-in4">Graphic</div>
+                    </div>
+                    <img src="homepage-desktop/homepage-flower-03.png" alt="">
+                </div>
+            </div>
+            <div class="box-flower-mobile">
+                <img src="homepage-tabletandmobile/homepage(tablet-and-phone).png" alt="">
+            </div>
+        </div>
+        <div class="footer" id="footer">
+            <!-- DIV FOLLOW ME -->
+            <div class="followme">
+                <h2 id="follow">Follow me</h2>
+                <ul class="icons">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/chhaanc/"><img src="icons/fb.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/chhaanc/"><img src="icons/insta.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/chancdoesui"><img src="icons/x.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/duy-ho-34b2142a2/?trk=opento_sprofile_topcard"><img src="icons/linkedin.png" alt=""></a>
+                    </li>
+            </div>
+            <!-- DIV CONTACT INFO -->
+            <div class="contactinfo">
+                <h2 id="contact">Contact Info</h2>
+                <div class="details">
+                    <div class="ct">
+                        <img src="footer-icons/location.png" alt="">
+                        <span>15B Nguyen Luong Bang Street, Phu My, District 7, HCM City</span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/mail.png" alt="">
+                        <span style="margin-top: -18px;"><a href="mailto:duychanc6705@gmail.com ">duychanc6705@gmail.com</a></span>
+                    </div>
+                    
+                    <div class="ct">
+                        <img src="footer-icons/phone.png" alt="">
+                        <span style="margin-top: -20px;">+84 818 521 319</span>
+                    </div>
+                </div>    
+            </div>
+            <div style="clear:both"></div>
+            <!-- DIV COPYRIGHT -->
+            <div class="Copyright">© 2024 UI Portfolio. All rights reserved | Design by chanc</div>
+        </div>
+    </body>
+</html>
